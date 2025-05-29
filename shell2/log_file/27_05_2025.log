@@ -1,0 +1,16 @@
+hello
+CPU Usage
+%Cpu(s):  3.0 us,  3.0 sy,  0.0 ni, 93.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+Memory Usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       276Mi       2.8Gi       4.0Mi       775Mi       3.3Gi
+Swap:             0B          0B          0B
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  3.9G   26G  14% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           784M  1.1M  783M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda15      105M  6.1M   99M   6% /boot/efi
+/dev/sdb1       7.8G   28K  7.4G   1% /mnt
+tmpfs           392M  4.0K  392M   1% /run/user/1000
