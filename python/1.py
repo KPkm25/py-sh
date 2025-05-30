@@ -7,7 +7,7 @@ def check_pwd(og,new):
 	if(og==new_e):
 		print("Password match successful!")
 	else:
-		print("Password authentication failed")
+		print("Password authentication failed!")
 
 if __name__ == "__main__":
 	password=input("Please enter a password:")
