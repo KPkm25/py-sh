@@ -1,0 +1,391 @@
+Q1: Use for, .split(), and if to create a Statement that will print out words that start with 's':
+
+
+
+st = 'Print only the words that start with s in this sentence'
+
+
+
+Q2:Use range() to print all the even numbers from 0 to 10. 
+
+
+
+
+
+Q3:Use a List Comprehension to create a list of all numbers between 1 and 50 that are divisible by 3.
+
+
+
+
+
+Q4:Go through the string below and if the length of a word is even print "even!"
+
+st = 'Print every word in this sentence that has an even number of letters'
+
+
+
+Q5:Write a program that prints the integers from 1 to 100. But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".
+
+
+
+Q6:Use List Comprehension to create a list of the first letters of every word in the string below:
+
+
+
+st = 'Create a list of the first letters of every word in this string'
+
+
+
+
+
+Q7:LESSER OF TWO EVENS: Write a function that returns the lesser of two given numbers if both numbers are even, but returns the greater if one or both numbers are odd
+
+lesser_of_two_evens(2,4) --> 2
+
+lesser_of_two_evens(2,5) --> 5
+
+
+
+Q8:MAKES TWENTY: Given two integers, return True if the sum of the integers is 20 or if one of the integers is 20. If not, return False¶
+
+makes_twenty(20,10) --> True
+
+makes_twenty(12,8) --> True
+
+makes_twenty(2,3) --> False
+
+
+
+Q9:Write a function that checks whether a number is in a given range (inclusive of high and low)
+
+
+
+ran_check(5,2,7)  Note:example check whther 5 is between 2 and 7
+
+
+
+Q10:Write a Python function that accepts a string and calculates the number of upper case letters and lower case letters.
+
+
+
+Sample String : 'Hello Mr. Rogers, how are you this fine Tuesday?'
+
+Expected Output :
+
+No. of Upper case characters : 4
+
+No. of Lower case Characters : 33
+
+
+
+Q11:Write a Python function that takes a list and returns a new list with unique elements of the first list.
+
+
+
+Sample List : [1,1,1,1,2,2,3,3,3,3,4,5]
+
+Unique List : [1, 2, 3, 4, 5]
+
+
+
+
+
+Q12:Write a Python function to multiply all the numbers in a list.
+
+
+
+Sample List : [1, 2, 3, -4]
+
+Expected Output : -24
+
+
+
+Q13:Write a Python function to check whether a string is pangram or not.
+
+
+
+Note : Pangrams are words or sentences containing every letter of the alphabet at least once.
+
+For example : "The quick brown fox jumps over the lazy dog"
+
+Hint: Look at the string module
+
+
+
+
+
+
+
+
+
+Q!4: Write a program that takes a list of student names and creates a dictionary where each student is mapped to another dictionary of subjects and random grades.
+
+
+
+Q15:Given two lists, write a program to create a dictionary where:
+
+
+
+Keys are elements common in both lists
+
+
+
+Values are tuples containing the index of that element in both lists.
+
+
+
+Q16:Write a program that takes a list of words and creates a dictionary where each word is the key and its value is a list of indexes where it appears in the original list.
+
+
+
+Q17:Write a program that takes a list of tuples (e.g., (fruit, quantity)) and returns a dictionary that sums the total quantity per fruit.
+
+
+
+Input: [('apple', 2), ('banana', 3), ('apple', 4)]
+
+Output: {'apple': 6, 'banana': 3}
+
+
+
+############################ SHELL 
+
+Section A: User and Group Management
+
+Q1.
+
+Write a script that takes a username and group name as input arguments.
+
+
+
+Task:
+
+
+
+Check if the group exists; if not, create it.
+
+
+
+Check if the user exists; if not, create the user and assign them to the group.
+
+
+
+Bonus: Lock the newly created user account.
+
+
+
+Q2.
+
+How can you list all users on the system whose login shell is /bin/bash?
+
+
+
+Output: Only the usernames.
+
+
+
+Q3.
+
+Given a group name as input, how can you print all members of that group?
+
+
+
+Q4.
+
+Write a script to delete users who have not logged in for more than 30 days.
+
+
+
+Tools: Use lastlog, awk, and userdel.
+
+
+
+Output: Print the usernames being deleted.
+
+
+
+ Section B: File Permissions & Ownership
+
+Q5.
+
+Write a script that performs a recursive permission audit for a given directory.
+
+
+
+Input: Directory path.
+
+
+
+Task: List all files that have 777 permissions.
+
+
+
+Bonus: Automatically change those permissions to 755.
+
+
+
+Q6.
+
+How do you set the default group ownership for a shared project directory at /srv/dev-team?
+
+
+
+Task:
+
+
+
+Change group ownership to devs.
+
+
+
+Set the SGID (Set Group ID) bit.
+
+
+
+Ensure that new files inherit the group ownership.
+
+
+
+Q7.
+
+Write a script to backup a user's home directory and then delete the user.
+
+
+
+Input: Username.
+
+
+
+Task:
+
+
+
+Archive /home/$user to /backups/.
+
+
+
+Delete the user account.
+
+
+
+REST API & curl
+
+Q8.
+
+How do you make an authenticated GET request to a REST API using curl?
+
+
+
+Input: API URL and Bearer token stored in an environment variable.
+
+
+
+Task: Print the JSON result using jq.
+
+
+
+Q9.
+
+How can you use curl to create a new user via a REST API?
+
+
+
+Input: JSON body containing name and email.
+
+
+
+Task: POST to a mock user API endpoint and print the status code and message.
+
+
+
+Q10.
+
+How do you download and parse a JSON API response using curl and jq?
+
+
+
+Task: Fetch a list of users and print usernames and emails.
+
+
+
+ Bash Logic & File Parsing
+
+Q11.
+
+How do you parse /etc/passwd to find all system users?
+
+
+
+Task: Output Username, UID, and Login shell for users where UID < 1000.
+
+
+
+Q12.
+
+Write a script to group files by extension in a given directory.
+
+
+
+Input: Directory path.
+
+
+
+Output: Count of each file extension (e.g., .sh, .log, .conf).
+
+
+
+Q13.
+
+How can you compare two user lists stored in separate text files?
+
+
+
+Input: Two files with usernames.
+
+
+
+Output: List of users present in file1 but not in file2.
+
+
+
+Q14.
+
+Write a script to generate a user report.
+
+
+
+Output: For each user, print UID, Primary group, and Login shell.
+
+
+
+Q15.
+
+How do you perform bulk user creation from a CSV file?
+
+
+
+CSV format: username,group,shell.
+
+
+
+Task: Create each user, assign to the group, and set the shell.
+
+
+
+Q16.
+
+How can you monitor login attempts for failed logins?
+
+
+
+Task: Parse /var/log/auth.log and output IPs with more than 5 failed login attempts.
+
+
+
+Q17.
+
+Write a script to check if users with home directories are missing ~/.ssh/authorized_keys.
+
+
+
+Task: Print a warning for each user where the file is missing.
